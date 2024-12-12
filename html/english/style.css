@@ -1,0 +1,268 @@
+/* General Reset */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #1c1c1c, #2d2d2d); /* Black gradient background */
+    color: #ecf0f1; /* Light text color for contrast */
+}
+
+
+/* Header Styles */
+header {
+    background-color: rgba(38, 38, 39, 0.441); /* Dark black with slight transparency */
+    color: #ecf0f1; /* Light text */
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid #f39c12; /* Accent with golden yellow */
+    position: relative;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 0.8rem;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+/* Navigation Bar Styles */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #1c1c1c; /* Deep black background for nav */
+    padding: 1.2rem 0;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    border-radius: 5vh;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #f39c12; /* Bright gold color for links */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #653d1a; /* Lighter gold on hover */
+    transform: scale(1.1);
+}
+
+/* Section Styles */
+section {
+    padding: 3rem;
+    background-color: rgba(26, 26, 26, 0.9); /* Darker section background */
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    margin: 3rem auto;
+    max-width: 85%;
+    transition: all 0.8s ease;
+}
+
+section:hover {
+    transform: translateY(-7px);
+}
+
+section h2 {
+    color: #ecf0f1;
+    margin-top: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 3px solid #f39c12; /* Golden yellow accent under header */
+    padding-bottom: 0.5rem;
+}
+
+/* Guide Card Styles */
+.guide-card {
+    border: 1px solid #7f8c8d; /* Subtle dark border */
+    margin: 1.5rem 0;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: #2c3e50; /* Dark grey-blue background for cards */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+    cursor: pointer;
+}
+
+.guide-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.guide-card h3 {
+    margin: 0;
+    text-decoration: #f39c12;
+    color: #f39c12; /* Golden yellow for heading */
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.guide-card p {
+    margin: 1rem 0;
+    color: #bdc3c7; /* Light grey text */
+    font-size: 1rem;
+}
+
+.guide-card a {
+    color:#f39c12;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.guide-card a:hover {
+    background-color: #17151417; /* Lighter gold on hover */
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(26, 26, 26, 0.9); /* Dark footer background */
+    color: #ecf0f1;
+    font-size: 1.1rem;
+    border-top: 5px solid #f39c12; /* Golden yellow accent line */
+    margin-top: 3rem;
+}
+
+footer a {
+    color: #ecf0f1; /* Gold color for footer links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #af835b; /* Lighter gold on hover */
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav {
+        text-align: left;
+        padding-left: 20px;
+
+    }
+
+    nav a {
+        display: block;
+        margin: 0.8rem 0;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+}
+@media(max-width:544px){
+    html{
+        font-size: 90.9%;
+    }
+}
+@media(max-width:944px){
+    html{
+        font-size: 90.9%;
+    }
+}
+
+/* Guide Image Styles */
+.guide-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* for table*/
+
+
+table{
+    background-color: #2c3e5060;
+    border-spacing: 0;
+    width:90%;
+}
+
+
+td a{
+    color: #fff;
+}
+table,tr,th,td{
+    
+    border-color: #e7eaeb;
+}
+
+td,th{
+padding: 8px;
+border-width: 0 1px 1px 0;
+}
+
+
+table,td,th{
+    border: 0.1px solid #f39c12;
+}
+
+/* english class*/
+#english{
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #bfac8d; /* Bright gold color for links */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+}
+
+
+img{
+    margin-left: 0;
+    height: 30%;
+    width: 100%;
+}
+
+/* for text*/
+h1{
+    font-size: xx-large;
+}
+h3{
+    font-size: 22px;
+    color: #6ab38b;
+}
+
+h4{
+   font-style: italic;
+   font-size: 19px;
+   color: #938792;
+  
+}
+p{
+  font-size: 15px;
+  font-weight: 600;
+ 
+}
